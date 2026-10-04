@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game">
+
+        <div class="hud">
+            <div class="health">
+                <span>HP</span>
+                <div class="hearts">
+                    <i></i><i></i><i></i>
+                </div>
+            </div>
+
+            <div class="score">
+                SCORE <strong id="score">000000</strong>
+            </div>
+
+            <div class="coins">
+                🪙 <span id="coins">0</span>
+            </div>
+        </div>
+
+        <div class="city">
+            <div class="moon"></div>
+            <div class="building b1"></div>
+            <div class="building b2"></div>
+            <div class="building b3"></div>
+            <div class="building b4"></div>
+            <div class="building b5"></div>
+        </div>
+
+        <div class="game-world">
+
+            <div id="player">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="leg left"></div>
+                <div class="leg right"></div>
+            </div>
+
+            <div id="objects"></div>
+
+            <div class="ground"></div>
+
+        </div>
+
+        <div id="startScreen" class="screen">
+            <h1>NEON RUNNER</h1>
+            <p>RUN • JUMP • DASH • SURVIVE</p>
+            <button id="startBtn">START RUN</button>
+        </div>
+
+        <div id="gameOver" class="screen hidden">
+            <h1>RUN OVER</h1>
+            <p>Your Score</p>
+            <h2 id="finalScore">0</h2>
+            <button id="restartBtn">RUN AGAIN</button>
+        </div>
+
+        <div class="controls">
+            <button id="jumpBtn">▲<small>JUMP</small></button>
+            <button id="dashBtn">»<small>DASH</small></button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
